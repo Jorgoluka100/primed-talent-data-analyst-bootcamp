@@ -1,0 +1,16 @@
+customer_id,gender,age,tenure_months,monthly_charges,total_charges,contract_type,churn
+C001,Male,45,24,75,1800,Month-to-Month,Yes
+C002,Female,30,12,55,660,Month-to-Month,Yes
+C003,Male,50,60,90,5400,Two-Year,No
+C004,Female,28,6,45,270,Month-to-Month,Yes
+C005,Male,35,36,70,2520,One-Year,No
+C006,Female,42,48,85,4080,Two-Year,No
+C007,Male,29,10,60,600,Month-to-Month,Yes
+C008,Female,55,72,95,6840,Two-Year,No
+C009,Male,33,18,65,1170,One-Year,No
+C010,Female,38,20,75,1500,Month-to-Month,Yes
+C011,Male,41,30,80,2400,One-Year,No
+C012,Female,26,5,40,200,Month-to-Month,Yes
+C013,Male,47,50,88,4400,Two-Year,No
+C014,Female,34,22,68,1496,One-Year,No
+C015,Male,31,8,58,464,Month-to-Month,Yes

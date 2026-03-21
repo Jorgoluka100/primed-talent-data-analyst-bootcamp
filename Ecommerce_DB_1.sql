@@ -1,0 +1,13 @@
+order_id,region,sales_amount
+1001,North,25000
+1002,South,18000
+1003,East,22000
+1004,West,20000
+1005,North,30000
+1006,South,15000
+1007,East,27000
+1008,West,23000
+1009,North,28000
+1010,South,17000
+1011,East,26000
+1012,West,24000
