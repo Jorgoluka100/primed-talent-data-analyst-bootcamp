@@ -1,0 +1,31 @@
+# Retail Margin & Discount Analysis Pipeline
+
+This project analyses retail transactions to show where sales convert into profit, where discounting damages margin, and which segments or geographies deserve commercial attention. It is designed to look credible for **data analyst, BI analyst, commercial analyst, and revenue-focused analyst** applications.
+
+## Project goal
+Turn raw order-level data into a stakeholder-ready view of profitability across:
+- states
+- segments
+- categories and sub-categories
+- discount bands
+- unit economics
+
+## Skills demonstrated
+- data cleaning with pandas
+- KPI design and summary tables
+- margin and discount feature engineering
+- SQL-style analysis with SQLite
+- visualisation with matplotlib
+- conversion of analysis into business recommendations
+
+## Main outputs
+- profitability summaries by state, segment, and sub-category
+- discount band risk analysis
+- state performance chart
+- discount vs profit chart
+- SQLite database for SQL interview talking points
+
+## Files
+- `data/SampleSuperstore.csv`
+- `notebook/01_retail_margin_pipeline.ipynb`
+- `outputs/`
