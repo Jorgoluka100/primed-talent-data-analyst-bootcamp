@@ -1,0 +1,11 @@
+customer_id,purchase_date,item_purchased,amount_spent,loyalty_points_earned,signup_date,age,gender,location,loyalty_tier
+C001,05/01/2024,Sneakers,89.99,90,15/12/2023,29,F,New York,Silver
+C002,11/01/2024,Hoodie,45.5,46,01/01/2024,41,M,Los Angeles,Bronze
+C003,12/01/2024,Jeans,60,60,03/01/2024,35,F,Chicago,Silver
+C004,15/01/2024,T-shirt,15,15,28/12/2023,22,M,Houston,Bronze
+C005,21/01/2024,Jacket,120,120,05/01/2024,33,F,New York,Gold
+C006,02/02/2024,Socks,5.99,6,15/01/2024,28,F,Miami,Bronze
+C007,05/02/2024,Cap,12.5,13,10/01/2024,45,M,Chicago,Silver
+C008,12/02/2024,Sneakers,92,92,20/12/2023,31,F,Los Angeles,Gold
+C009,19/02/2024,Jeans,58,58,03/01/2024,39,M,New York,Silver
+C010,01/03/2024,Hoodie,47,47,30/12/2023,26,F,Miami,Bronze

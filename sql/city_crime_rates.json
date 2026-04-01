@@ -1,0 +1,32 @@
+[
+    {
+        "city": "Chicago",
+        "year": 2024,
+        "violent_crime_rate": 945,
+        "property_crime_rate": 3180
+    },
+    {
+        "city": "New York",
+        "year": 2024,
+        "violent_crime_rate": 585,
+        "property_crime_rate": 1450
+    },
+    {
+        "city": "Los Angeles",
+        "year": 2024,
+        "violent_crime_rate": 750,
+        "property_crime_rate": 2600
+    },
+    {
+        "city": "Houston",
+        "year": 2024,
+        "violent_crime_rate": 1120,
+        "property_crime_rate": 4200
+    },
+    {
+        "city": "Phoenix",
+        "year": 2024,
+        "violent_crime_rate": 730,
+        "property_crime_rate": 3400
+    }
+]

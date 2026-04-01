@@ -1,0 +1,60 @@
+-- ======================================================
+-- UNIVERSITY ENROLLMENT SYSTEM SCHEMA
+-- ======================================================
+
+-- 1. Create Students Table
+-- Purpose: Stores unique identification and contact info for all students.
+CREATE TABLE StudentSystem (
+    StudentID INT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE
+);
+
+-- 2. Create Courses Table
+-- Purpose: Maintains a catalog of available academic courses and their credit values.
+CREATE TABLE CoursesSystem (
+    CourseID INT PRIMARY KEY,
+    CourseName VARCHAR(100) NOT NULL,
+    Credits INT CHECK (Credits > 0)
+);
+
+-- 3. Create Enrollments Table
+-- Purpose: A bridge table that links students to the courses they are taking.
+-- It records the specific grade a student earned in a specific course.
+CREATE TABLE EnrollmentsSystem (
+    EnrollmentID INT PRIMARY KEY,
+    StudentID INT,
+    CourseID INT,
+    Grade VARCHAR(2),
+    -- Constraint: Ensures that a student exists before they can enroll
+    FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
+    -- Constraint: Ensures that the course exists in the catalog
+    FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
+);
+
+-- 1. Insert Students
+-- We add these first so they have IDs to reference later
+INSERT INTO StudentSystem (StudentID, FirstName, LastName, Email) VALUES 
+(1, 'Alice', 'Smith', 'alice.smith@example.edu'),
+(2, 'Bob', 'Jones', 'bob.jones@example.edu'),
+(3, 'Charlie', 'Brown', 'c.brown@example.edu');
+
+-- 2. Insert Courses
+-- We add these so the Enrollments table knows which courses exist
+INSERT INTO CoursesSystem (CourseID, CourseName, Credits) VALUES 
+(101, 'Introduction to SQL', 3),
+(102, 'Data Structures', 4),
+(103, 'Web Development', 3);
+
+-- 3. Insert Enrollments
+-- We link the StudentID and CourseID here
+INSERT INTO EnrollmentsSystem (EnrollmentID, StudentID, CourseID, Grade) VALUES 
+(501, 1, 101, 'A'),   -- Alice in SQL
+(502, 1, 102, 'B+'),  -- Alice in Data Structures
+(503, 2, 101, 'B'),   -- Bob in SQL
+(504, 3, 103, 'A-');  -- Charlie in Web Dev
+
+select * from CoursesSystem;
+select * from StudentSystem;
+select * from EnrollmentsSystem;

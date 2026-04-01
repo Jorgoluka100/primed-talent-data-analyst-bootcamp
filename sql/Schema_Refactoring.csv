@@ -1,0 +1,4 @@
+RecordID,ClientName,ClientCity,ClientState,ProjectName,ProjectStart,ProjectEnd,TaskList,AssignedEmployees
+1,Acme Corp,New York,NY,Website Redesign,2025-01-15,2025-03-30,"Design Homepage, Develop Backend, Test Deployment","Alice Johnson, Robert Miller, Sophia Brown"
+2,Bright Solutions,Chicago,IL,Mobile App Development,2025-02-01,NULL,"UI Design, API Integration, Beta Testing","David Wilson, Emily Clark, John Smith"
+3,West Coast Tech,San Francisco,CA,Cloud Migration,2025-03-01,2025-06-15,"Migrate Database, Configure Servers, Security Audit","Michael Lee, Sarah Davis, Daniel Harris"

@@ -1,0 +1,18 @@
+CustomerID | CustomerName | PurchaseDate | ProductName | Quantity | PurchaseAmount | Country | Email
+
+1001 | John Smith | 01/15/2024 | Laptop | 1 | 899.99 | UK | john@email.com
+
+1002 | sarah johnson | 2024-01-20 | Mouse | 2 | 25.50 | United Kingdom | sarah@email.com
+
+1003 | Mike Brown | 15-Jan-2024 | Keyboard | | 45.00 | uk | mike@email.com
+
+1004 | Lisa Davis | 01/22/2024 | Monitor | -1 | 299.99 | UK | #N/A
+
+1001 | John Smith | 01/15/2024 | Laptop | 1 | 899.99 | UK | john@email.com
+
+1005 | | 01/25/2024 | Webcam | 1 | | USA | customer5@email.com
+
+1006 | Tom Wilson | Jan 28 2024 | Headset | 1 | 79.99 | England | tom@email
+
+1007 | Emma Watson | 02/01/2024 | Cable | 1000 | 5.99 | UK | emma@email.com
+ 
