@@ -28,8 +28,13 @@ The notebooks retain their executed outputs so the results can be inspected imme
 │   ├── SampleSuperstore.csv
 │   ├── AmesHousing.csv
 │   └── uber_raw_apr14.csv
-├── outputs/
 ├── sql/
+│   ├── 01_data_quality_checks.sql
+│   ├── 02_null_safe_reporting.sql
+│   ├── 03_schema_normalisation.sql
+│   ├── 04_query_optimisation.sql
+│   └── README.md
+├── .gitignore
 └── README.md
 ```
 
@@ -45,11 +50,13 @@ jupyter lab
 
 Open the relevant notebook from that directory and run all cells. I deliberately do **not** label the GitHub links as one-click Colab runs because Colab opens a notebook without cloning its surrounding repository data.
 
-## SQL learning evidence
+## SQL examples
 
-The [`sql/`](sql/) directory contains bootcamp exercises across joins, `CASE`, conditional aggregation, null handling, schema design, query planning, optimisation, segmentation, and reporting logic. These files are retained as **learning evidence**, not presented as production SQL or flagship portfolio projects.
+The [`sql/`](sql/) directory now contains four compact, self-contained PostgreSQL examples distilled from my bootcamp work: data-quality checks, null-safe reporting, schema normalisation, and query optimisation. They are deliberately small enough to review quickly and clean enough to discuss in an interview.
 
-See the curated [`sql/README.md`](sql/README.md) for the best examples and the scope of that material.
+The original classroom SQL exercises, database files, instructor scaffolding, and scratch work are preserved on `archive/pre-portfolio-curation-2026-08-11` rather than mixed into the recruiter-facing `main` branch.
+
+For a full SQL analytics project with source validation, relational-grain controls, KPI reconciliation, a semantic layer, and automated checks, see [SQL Sales and Customer Analysis](https://github.com/Jorgoluka100/uni_projects/blob/main/02_SQL_Sales_and_Customer_Analysis.ipynb).
 
 ## Workflow demonstrated
 
@@ -64,11 +71,12 @@ See the curated [`sql/README.md`](sql/README.md) for the best examples and the s
 ## Scope and limitations
 
 - The datasets are established teaching datasets. Results demonstrate analytical method; they are **not claims about today's housing, retail, or transport markets**.
-- The three notebooks above are the completed case studies. Classroom exercises remain visible for transparency but should not be interpreted as polished production work.
-- Historical course/instructor material removed from `main` remains preserved in the repository history/archive branch rather than being used as portfolio evidence.
+- The three notebooks above are the completed analytical case studies on `main`.
+- The SQL folder contains curated learning examples rather than a production SQL application.
+- Historical course/instructor material remains recoverable on the archive branch and in repository history without weakening the public portfolio surface.
 
 ## Skills evidenced
 
-**Python · SQL · Pandas · NumPy · scikit-learn · Matplotlib · Seaborn · data cleaning · feature engineering · regression · time-based validation · business analysis · reporting**
+**Python · SQL · Pandas · NumPy · scikit-learn · Matplotlib · Seaborn · PostgreSQL · data cleaning · feature engineering · regression · time-based validation · business analysis · reporting**
 
 For opportunities in analytics, data science, machine learning, or applied AI, contact me through my [GitHub profile](https://github.com/Jorgoluka100).
