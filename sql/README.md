@@ -1,30 +1,14 @@
-# SQL Learning Portfolio
+# Curated SQL Examples
 
-This directory contains SQL exercises completed during the Primed Talent Data Analyst Bootcamp. It is retained to show progression across relational modelling, reporting logic, data-quality checks, joins, aggregation, date handling, and query optimisation.
+This folder contains a small set of cleaned PostgreSQL examples distilled from my bootcamp work. The goal is to show the underlying SQL skills clearly without mixing recruiter-facing code with classroom scaffolding, database files, duplicate solutions, or scratch exercises.
 
-## Best examples to review
-
-| Example | What it demonstrates |
+| Script | What it demonstrates |
 |---|---|
-| [`Task 1 - Validating Data Consistency with CASE.sql`](Task%201%20-%20Validating%20Data%20Consistency%20with%20CASE.sql) | Uses `CASE` and conditional aggregation to identify missing region data and quantify the scale of a data-quality issue. |
-| [`Assignment 1 - The Null-Safe Reporting Query.sql`](Assignment%201%20-%20The%20Null-Safe%20Reporting%20Query.sql) | Uses `COALESCE` to make transaction calculations and reporting fields robust to missing values. |
-| [`Schema_Refactoring.sql`](Schema_Refactoring.sql) | Exercises schema design and refactoring rather than treating every analysis as a single flat table. |
-| [`Task 2 - Optimizing a Date-Range Query.sql`](Task%202%20-%20Optimizing%20a%20Date-Range%20Query.sql) | Focuses on date filtering and query-performance reasoning. |
-| [`queryplan.sql`](queryplan.sql) | Explores query plans and the relationship between SQL structure and execution behaviour. |
+| [`01_data_quality_checks.sql`](01_data_quality_checks.sql) | Missing-value checks, conditional aggregation, duplicate detection, and simple reconciliation. |
+| [`02_null_safe_reporting.sql`](02_null_safe_reporting.sql) | `COALESCE`, safe arithmetic, status-aware reporting, and grouped business metrics. |
+| [`03_schema_normalisation.sql`](03_schema_normalisation.sql) | Moving from a denormalised design to clients, projects, tasks, and employee assignments with foreign keys. |
+| [`04_query_optimisation.sql`](04_query_optimisation.sql) | Sargable date predicates, indexing, `EXPLAIN ANALYZE`, and avoiding functions on indexed filter columns. |
 
-## Topics covered
+These are intentionally compact learning examples. For a full SQL analytics project with source validation, grain controls, KPI reconciliation, a semantic layer, and automated checks, see [`02_SQL_Sales_and_Customer_Analysis.ipynb`](https://github.com/Jorgoluka100/uni_projects/blob/main/02_SQL_Sales_and_Customer_Analysis.ipynb) in my main AI & Data Science portfolio.
 
-- joins and relational reasoning
-- `CASE` expressions and conditional aggregation
-- null-safe reporting with `COALESCE`
-- date and time logic
-- schema creation and refactoring
-- segmentation and reporting queries
-- indexes, query plans, and optimisation exercises
-- introductory NoSQL and time-series activities
-
-## Scope
-
-These files are **bootcamp learning exercises**, not a production SQL codebase. Some preserve classroom scaffolding, sample data, or alternative solutions because the purpose of this directory is to show learning progression transparently.
-
-For polished SQL used inside an end-to-end project, see the [SQL Sales and Customer Analysis](https://github.com/Jorgoluka100/uni_projects/blob/main/02_SQL_Sales_and_Customer_Analysis.ipynb) in my main AI & Data Science portfolio. That project includes source checks, relational grain controls, reconciliation tests, a semantic layer, and verified analytical outputs.
+The original bootcamp SQL exercises are preserved on `archive/pre-portfolio-curation-2026-08-11` and in repository history.
