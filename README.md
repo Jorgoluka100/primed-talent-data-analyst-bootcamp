@@ -34,6 +34,8 @@ The notebooks retain their executed outputs so the results can be inspected imme
 │   ├── 03_schema_normalisation.sql
 │   ├── 04_query_optimisation.sql
 │   └── README.md
+├── requirements.txt
+├── LICENSE
 ├── .gitignore
 └── README.md
 ```
@@ -44,7 +46,9 @@ The notebooks use repository-relative data paths. To rerun them with the same la
 
 ```bash
 git clone https://github.com/Jorgoluka100/primed-talent-data-analyst-bootcamp.git
-cd primed-talent-data-analyst-bootcamp/notebooks
+cd primed-talent-data-analyst-bootcamp
+python -m pip install -r requirements.txt
+cd notebooks
 jupyter lab
 ```
 
@@ -52,7 +56,7 @@ Open the relevant notebook from that directory and run all cells. I deliberately
 
 ## SQL examples
 
-The [`sql/`](sql/) directory now contains four compact, self-contained PostgreSQL examples distilled from my bootcamp work: data-quality checks, null-safe reporting, schema normalisation, and query optimisation. They are deliberately small enough to review quickly and clean enough to discuss in an interview.
+The [`sql/`](sql/) directory contains four compact, self-contained PostgreSQL examples distilled from my bootcamp work: data-quality checks, null-safe reporting, schema normalisation, and query optimisation. They are deliberately small enough to review quickly and clean enough to discuss in an interview.
 
 The original classroom SQL exercises, database files, instructor scaffolding, and scratch work are preserved on `archive/pre-portfolio-curation-2026-08-11` rather than mixed into the recruiter-facing `main` branch.
 
@@ -74,6 +78,7 @@ For a full SQL analytics project with source validation, relational-grain contro
 - The three notebooks above are the completed analytical case studies on `main`.
 - The SQL folder contains curated learning examples rather than a production SQL application.
 - Historical course/instructor material remains recoverable on the archive branch and in repository history without weakening the public portfolio surface.
+- The repository MIT licence covers code authored by Jorgo Luka; third-party datasets retain their own terms.
 
 ## Skills evidenced
 
