@@ -36,6 +36,7 @@ The notebooks retain their executed outputs so the results can be inspected imme
 │   └── README.md
 ├── requirements.txt
 ├── LICENSE
+├── THIRD_PARTY_NOTICES.md
 ├── .gitignore
 └── README.md
 ```
@@ -78,7 +79,7 @@ For a full SQL analytics project with source validation, relational-grain contro
 - The three notebooks above are the completed analytical case studies on `main`.
 - The SQL folder contains curated learning examples rather than a production SQL application.
 - Historical course/instructor material remains recoverable on the archive branch and in repository history without weakening the public portfolio surface.
-- The repository MIT licence covers code authored by Jorgo Luka; third-party datasets retain their own terms.
+- Original repository code is MIT-licensed; third-party datasets retain their own terms. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
 ## Skills evidenced
 
