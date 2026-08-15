@@ -2,6 +2,8 @@
 
 ## Jorgo Luka
 
+**Application focus:** Entry-level · Internships · Graduate schemes · Junior Data / Analytics roles
+
 Applied work from the **Primed Talent Data Analyst Bootcamp (220 hours)**, focused on turning raw data into defensible analysis, models, visualisations, and business recommendations.
 
 For my strongest current machine-learning and AI work, start with my separate [AI & Data Science Portfolio](https://github.com/Jorgoluka100/uni_projects). This repository is intentionally narrower: it shows the analytical foundations behind that work — cleaning, EDA, SQL, regression, reporting, and communicating results.
@@ -78,11 +80,3 @@ For a full SQL analytics project with source validation, relational-grain contro
 - The datasets are established teaching datasets. Results demonstrate analytical method; they are **not claims about today's housing, retail, or transport markets**.
 - The three notebooks above are the completed analytical case studies on `main`.
 - The SQL folder contains curated learning examples rather than a production SQL application.
-- Historical course/instructor material remains recoverable on the archive branch and in repository history without weakening the public portfolio surface.
-- Original repository code is MIT-licensed; third-party datasets retain their own terms. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
-
-## Skills evidenced
-
-**Python · SQL · Pandas · NumPy · scikit-learn · Matplotlib · Seaborn · PostgreSQL · data cleaning · feature engineering · regression · time-based validation · business analysis · reporting**
-
-For opportunities in analytics, data science, machine learning, or applied AI, contact me through my [GitHub profile](https://github.com/Jorgoluka100).
