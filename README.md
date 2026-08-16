@@ -1,51 +1,31 @@
-# Data Analyst Bootcamp Portfolio
+# Data Analyst Bootcamp Projects
 
 ## Jorgo Luka
 
-**Application focus:** Entry-level · Internships · Graduate schemes · Junior Data / Analytics roles
+This repo contains the main projects I completed from a 220-hour Data Analyst Bootcamp. They are smaller than the projects in my [AI & Data Science portfolio](https://github.com/Jorgoluka100/uni_projects), but they show the basics I use all the time: cleaning data, exploring it, writing SQL, building simple models and explaining the result.
 
-Applied work from the **Primed Talent Data Analyst Bootcamp (220 hours)**, focused on turning raw data into defensible analysis, models, visualisations, and business recommendations.
+## Projects
 
-For my strongest current machine-learning and AI work, start with my separate [AI & Data Science Portfolio](https://github.com/Jorgoluka100/uni_projects). This repository is intentionally narrower: it shows the analytical foundations behind that work — cleaning, EDA, SQL, regression, reporting, and communicating results.
+| Project | What I looked at | Result | Tools |
+|---|---|---|---|
+| **[Retail Margin & Discount Analysis](notebooks/01_retail_margin_pipeline.ipynb)** | Looked at where sales were turning into losses by state, product type and discount level. | **9,994** orders, **$2.30M** sales and **$286.4K** profit. Texas (**-$25.7K**) and Tables (**-$17.7K**) were the largest losses by state and sub-category. | Python, Pandas, NumPy, Matplotlib, Seaborn |
+| **[Housing Price Modelling](notebooks/02_housing_price_pipeline.ipynb)** | Cleaned the housing data, built a preprocessing pipeline and compared models on a held-out test set. | **2,930** homes, **586** in the test set; random-forest RMSE **$30,235**, R² **0.886**. | Python, scikit-learn |
+| **[Ride Demand Forecasting](notebooks/03_ride_demand_pipeline.ipynb)** | Turned raw pickup data into an hourly time series and predicted the next unseen period using time features. | **564,516** raw pickups; chronological **556/140** train-test split; MAE **144.84**, RMSE **200.63**, R² **0.914**. | Python, Pandas, scikit-learn |
 
-## Start here
+The notebooks keep their outputs so the charts and results can be viewed directly on GitHub.
 
-| Project | Question answered | Verified result | Main tools | Open |
-|---|---|---|---|---|
-| **Retail Margin & Discount Analysis** | Where are discounting, geography, and product mix destroying profit? | Audited **9,994** orders covering **$2.30M** sales and **$286.4K** profit; Texas (**-$25.7K**) and Tables (**-$17.7K**) were the largest state and sub-category losses. | Python, Pandas, NumPy, Matplotlib, Seaborn | [Executed notebook](notebooks/01_retail_margin_pipeline.ipynb) |
-| **Housing Price Modelling** | Which prepared property characteristics best explain sale price, and how accurately can a simple pipeline estimate it? | **2,930** homes; **586-home** test set; random-forest RMSE **$30,235** and R² **0.886**; overall quality ranked first in feature importance. | Python, scikit-learn, preprocessing pipelines | [Executed notebook](notebooks/02_housing_price_pipeline.ipynb) |
-| **Ride Demand Forecasting** | How does hourly pickup demand change, and can recent time features estimate the next unseen period? | **564,516** raw pickups aggregated into an hourly series; chronological **556/140** train-test split; linear-regression MAE **144.84**, RMSE **200.63**, R² **0.914**. | Python, Pandas, time features, scikit-learn | [Executed notebook](notebooks/03_ride_demand_pipeline.ipynb) |
+## SQL practice
 
-The notebooks retain their executed outputs so the results can be inspected immediately on GitHub.
+The [`sql/`](sql/) folder contains short PostgreSQL examples covering:
 
-## Repository structure
+- data-quality checks
+- null-safe reporting
+- schema normalisation
+- query optimisation
 
-```text
-.
-├── notebooks/
-│   ├── 01_retail_margin_pipeline.ipynb
-│   ├── 02_housing_price_pipeline.ipynb
-│   └── 03_ride_demand_pipeline.ipynb
-├── data/
-│   ├── SampleSuperstore.csv
-│   ├── AmesHousing.csv
-│   └── uber_raw_apr14.csv
-├── sql/
-│   ├── 01_data_quality_checks.sql
-│   ├── 02_null_safe_reporting.sql
-│   ├── 03_schema_normalisation.sql
-│   ├── 04_query_optimisation.sql
-│   └── README.md
-├── requirements.txt
-├── LICENSE
-├── THIRD_PARTY_NOTICES.md
-├── .gitignore
-└── README.md
-```
+For a larger SQL project, see my [SQL Sales & Customer Analysis](https://github.com/Jorgoluka100/uni_projects/blob/main/02_SQL_Sales_and_Customer_Analysis.ipynb).
 
-## Reproduce the featured notebooks
-
-The notebooks use repository-relative data paths. To rerun them with the same layout:
+## Running the notebooks
 
 ```bash
 git clone https://github.com/Jorgoluka100/primed-talent-data-analyst-bootcamp.git
@@ -55,28 +35,15 @@ cd notebooks
 jupyter lab
 ```
 
-Open the relevant notebook from that directory and run all cells. I deliberately do **not** label the GitHub links as one-click Colab runs because Colab opens a notebook without cloning its surrounding repository data.
+The notebooks use the data files stored in this repository, which is why I have not labelled them as one-click Colab notebooks.
 
-## SQL examples
+## What I practised here
 
-The [`sql/`](sql/) directory contains four compact, self-contained PostgreSQL examples distilled from my bootcamp work: data-quality checks, null-safe reporting, schema normalisation, and query optimisation. They are deliberately small enough to review quickly and clean enough to discuss in an interview.
+1. Checking columns, types, missing values and duplicates.
+2. Cleaning data before calculating KPIs or fitting a model.
+3. Exploring patterns with grouped summaries and charts.
+4. Keeping training and test data separate.
+5. Comparing a model with a simple baseline where appropriate.
+6. Turning the result into a short business conclusion.
 
-The original classroom SQL exercises, database files, instructor scaffolding, and scratch work are preserved on `archive/pre-portfolio-curation-2026-08-11` rather than mixed into the recruiter-facing `main` branch.
-
-For a full SQL analytics project with source validation, relational-grain controls, KPI reconciliation, a semantic layer, and automated checks, see [SQL Sales and Customer Analysis](https://github.com/Jorgoluka100/uni_projects/blob/main/02_SQL_Sales_and_Customer_Analysis.ipynb).
-
-## Workflow demonstrated
-
-1. Inspect schema, types, missing values, duplicates, and unexpected ranges.
-2. Clean and standardise data before calculating business metrics.
-3. Build decision-relevant features without using information unavailable at prediction time.
-4. Explore patterns with grouped summaries and clear visualisations.
-5. Establish an interpretable baseline before comparing a more flexible model.
-6. Evaluate on held-out data with metrics appropriate to the problem.
-7. Translate the analysis into findings a non-technical stakeholder can act on.
-
-## Scope and limitations
-
-- The datasets are established teaching datasets. Results demonstrate analytical method; they are **not claims about today's housing, retail, or transport markets**.
-- The three notebooks above are the completed analytical case studies on `main`.
-- The SQL folder contains curated learning examples rather than a production SQL application.
+These are teaching datasets, so the results show my analysis process rather than making claims about today's retail, housing or transport markets.
