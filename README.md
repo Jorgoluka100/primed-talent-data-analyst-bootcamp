@@ -1,31 +1,42 @@
-# Data Analyst Bootcamp Projects
+# Data Analyst Portfolio — Bootcamp Projects
 
 ## Jorgo Luka
 
-This repo contains the main projects I completed from a 220-hour Data Analyst Bootcamp. They are smaller than the projects in my [AI & Data Science portfolio](https://github.com/Jorgoluka100/uni_projects), but they show the basics I use all the time: cleaning data, exploring it, writing SQL, building simple models and explaining the result.
+This repository is the **analyst-focused supporting portfolio** behind my main [Data & AI portfolio](https://github.com/Jorgoluka100/uni_projects). It contains work completed during a 220-hour Data Analyst Bootcamp and focuses on the fundamentals that matter in analyst roles: **cleaning data, defining useful metrics, exploring patterns, writing SQL, validating results and explaining what the numbers mean**.
 
-## Projects
+## Best evidence
 
-| Project | What I looked at | Result | Tools |
-|---|---|---|---|
-| **[Retail Margin & Discount Analysis](notebooks/01_retail_margin_pipeline.ipynb)** | Looked at where sales were turning into losses by state, product type and discount level. | **9,994** orders, **$2.30M** sales and **$286.4K** profit. Texas (**-$25.7K**) and Tables (**-$17.7K**) were the largest losses by state and sub-category. | Python, Pandas, NumPy, Matplotlib, Seaborn |
-| **[Housing Price Modelling](notebooks/02_housing_price_pipeline.ipynb)** | Cleaned the housing data, built a preprocessing pipeline and compared models on a held-out test set. | **2,930** homes, **586** in the test set; random-forest RMSE **$30,235**, R² **0.886**. | Python, scikit-learn |
-| **[Ride Demand Forecasting](notebooks/03_ride_demand_pipeline.ipynb)** | Turned raw pickup data into an hourly time series and predicted the next unseen period using time features. | **564,516** raw pickups; chronological **556/140** train-test split; MAE **144.84**, RMSE **200.63**, R² **0.914**. | Python, Pandas, scikit-learn |
+| Project | Business question | Evidence | Tools |
+| --- | --- | --- | --- |
+| **[Retail Margin & Discount Analysis](notebooks/01_retail_margin_pipeline.ipynb)** | Where are sales failing to translate into profit? | **9,994** orders, **$2.30M** sales and **$286.4K** profit; Texas (**-$25.7K**) and Tables (**-$17.7K**) were the largest losses by state and sub-category. | Python, Pandas, NumPy, Matplotlib, Seaborn |
+| **[Housing Price Modelling](notebooks/02_housing_price_pipeline.ipynb)** | How accurately can sale prices be estimated after a reproducible cleaning and modelling pipeline? | **2,930** homes, **586** held-out test rows; random-forest RMSE **$30,235**, R² **0.886**. | Python, scikit-learn |
+| **[Ride Demand Forecasting](notebooks/03_ride_demand_pipeline.ipynb)** | Can recent pickup patterns support short-horizon demand planning? | **564,516** raw pickups; chronological **556/140** train-test split; MAE **144.84**, RMSE **200.63**, R² **0.914**. | Python, Pandas, scikit-learn |
 
-The notebooks keep their outputs so the charts and results can be viewed directly on GitHub.
+The notebooks retain their outputs so charts, checks and conclusions can be reviewed directly on GitHub.
 
-## SQL practice
+## SQL evidence
 
-The [`sql/`](sql/) folder contains short PostgreSQL examples covering:
+The [`sql/`](sql/) folder contains PostgreSQL examples covering:
 
 - data-quality checks
 - null-safe reporting
 - schema normalisation
 - query optimisation
 
-For a larger SQL project, see my [SQL Sales & Customer Analysis](https://github.com/Jorgoluka100/uni_projects/blob/main/02_SQL_Sales_and_Customer_Analysis.ipynb).
+For a larger end-to-end SQL project, use **[E-commerce SQL Analytics](https://github.com/Jorgoluka100/uni_projects/tree/main/projects/ecommerce_sql_analytics)** in my main portfolio. It includes relational modelling, reconciliation, cohorts, window functions and join-safety tests.
 
-## Running the notebooks
+## Analyst habits demonstrated here
+
+- inspect types, missing values and duplicates before reporting
+- clean data before calculating KPIs
+- use grouped summaries and visualisations to find decision-relevant patterns
+- keep training and test data separate when modelling
+- compare models with meaningful baselines
+- translate outputs into concise business conclusions
+
+These are teaching datasets, so the projects demonstrate my analysis process rather than making claims about current retail, housing or transport markets.
+
+## Run locally
 
 ```bash
 git clone https://github.com/Jorgoluka100/primed-talent-data-analyst-bootcamp.git
@@ -34,16 +45,3 @@ python -m pip install -r requirements.txt
 cd notebooks
 jupyter lab
 ```
-
-The notebooks use the data files stored in this repository, which is why I have not labelled them as one-click Colab notebooks.
-
-## What I practised here
-
-1. Checking columns, types, missing values and duplicates.
-2. Cleaning data before calculating KPIs or fitting a model.
-3. Exploring patterns with grouped summaries and charts.
-4. Keeping training and test data separate.
-5. Comparing a model with a simple baseline where appropriate.
-6. Turning the result into a short business conclusion.
-
-These are teaching datasets, so the results show my analysis process rather than making claims about today's retail, housing or transport markets.
