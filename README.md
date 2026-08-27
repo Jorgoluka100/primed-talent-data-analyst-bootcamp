@@ -2,9 +2,15 @@
 
 ## Jorgo Luka
 
-This repository is the **analyst-focused supporting portfolio** behind my main [Data & AI portfolio](https://github.com/Jorgoluka100/uni_projects). It contains work completed during a 220-hour Data Analyst Bootcamp and focuses on the fundamentals that matter in analyst roles: **cleaning data, defining useful metrics, exploring patterns, writing SQL, validating results and explaining what the numbers mean**.
+This repository is the **analyst-focused supporting portfolio** behind my main [Data & AI portfolio](https://github.com/Jorgoluka100/uni_projects). It focuses on the fundamentals that matter in analyst roles: **cleaning data, defining useful metrics, writing SQL, building reports, validating results and explaining what the numbers mean**.
 
-## Best evidence
+## Start here
+
+### [Retail Performance Dashboard →](dashboard/)
+
+An interactive Streamlit dashboard built on the retail dataset in this repository. It adds business-facing reporting evidence to the portfolio: KPI cards, region/category filters, profit-margin analysis, loss concentration, discount bands and a decision summary.
+
+## Analysis projects
 
 | Project | Business question | Evidence | Tools |
 | --- | --- | --- | --- |
@@ -29,7 +35,7 @@ For a larger end-to-end SQL project, use **[E-commerce SQL Analytics](https://gi
 
 - inspect types, missing values and duplicates before reporting
 - clean data before calculating KPIs
-- use grouped summaries and visualisations to find decision-relevant patterns
+- build filters and summaries around business questions
 - keep training and test data separate when modelling
 - compare models with meaningful baselines
 - translate outputs into concise business conclusions
@@ -42,6 +48,11 @@ These are teaching datasets, so the projects demonstrate my analysis process rat
 git clone https://github.com/Jorgoluka100/primed-talent-data-analyst-bootcamp.git
 cd primed-talent-data-analyst-bootcamp
 python -m pip install -r requirements.txt
-cd notebooks
 jupyter lab
+```
+
+To launch the dashboard:
+
+```bash
+streamlit run dashboard/app.py
 ```
