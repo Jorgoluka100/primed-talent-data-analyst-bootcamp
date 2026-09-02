@@ -4,6 +4,8 @@
 
 This is my **analyst-focused supporting portfolio**, containing projects originally developed through structured training and then retained as evidence of the core analyst workflow: **cleaning data, defining useful metrics, writing SQL, building reports, validating results and explaining what the numbers mean**.
 
+[![Analyst portfolio integrity](https://github.com/Jorgoluka100/primed-talent-data-analyst-bootcamp/actions/workflows/portfolio-integrity.yml/badge.svg)](https://github.com/Jorgoluka100/primed-talent-data-analyst-bootcamp/actions/workflows/portfolio-integrity.yml)
+
 For my stronger end-to-end Data Science, Data Engineering, AI and BI work, start with the **[main Data & AI portfolio](https://github.com/Jorgoluka100/uni_projects)**.
 
 ## Best analyst / BI evidence
@@ -20,7 +22,7 @@ An interactive Streamlit dashboard built on the retail dataset in this repositor
 
 | Project | Business question | Evidence | Tools |
 | --- | --- | --- | --- |
-| **[Retail Margin & Discount Analysis](notebooks/01_retail_margin_pipeline.ipynb)** | Where are sales failing to translate into profit? | **9,994** orders, **$2.30M** sales and **$286.4K** profit; Texas (**-$25.7K**) and Tables (**-$17.7K**) were the largest losses by state and sub-category. | Python, Pandas, NumPy, Matplotlib |
+| **[Retail Margin & Discount Analysis](notebooks/01_retail_margin_pipeline.ipynb)** | Where are sales failing to translate into profit? | **9,994** line-item records, **$2.30M** sales and **$286.4K** profit; Texas (**-$25.7K**) and Tables (**-$17.7K**) were the largest losses by state and sub-category. | Python, Pandas, NumPy, Matplotlib |
 | **[Housing Price Modelling](notebooks/02_housing_price_pipeline.ipynb)** | How accurately can sale prices be estimated after a reproducible cleaning and modelling pipeline? | **2,930** homes, **586** held-out test rows; random-forest RMSE **$30,235**, R² **0.886**. | Python, scikit-learn |
 | **[Ride Demand Forecasting](notebooks/03_ride_demand_pipeline.ipynb)** | Can recent pickup patterns support short-horizon demand planning? | **564,516** raw pickups; chronological **556/140** train-test split; MAE **144.84**, RMSE **200.63**, R² **0.914**. | Python, Pandas, scikit-learn |
 
@@ -47,6 +49,8 @@ For larger end-to-end SQL and analytics-engineering evidence, use **[E-commerce 
 - translate outputs into concise business conclusions
 
 These are teaching datasets, so the projects demonstrate my analysis process rather than making claims about current retail, housing or transport markets.
+
+Dataset provenance, scope and retained-file checksums are recorded in **[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)**.
 
 ## Run locally
 
