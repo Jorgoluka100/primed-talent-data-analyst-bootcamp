@@ -12,7 +12,7 @@ A small interactive dashboard built from the repository's `SampleSuperstore.csv`
 
 ## What it demonstrates
 
-- KPI definition and reconciliation from transaction-level data
+- KPI definition and reconciliation from line-item data
 - stakeholder-friendly filtering and drill-down
 - profit-margin and loss-concentration analysis
 - business-focused visualisation rather than model-first analysis

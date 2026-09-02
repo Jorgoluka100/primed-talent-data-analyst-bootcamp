@@ -103,12 +103,13 @@ avg_discount = filtered["Discount"].mean()
 order_count = (
     filtered["Order ID"].nunique() if "Order ID" in filtered.columns else len(filtered)
 )
+order_label = "Orders" if "Order ID" in filtered.columns else "Rows"
 
 kpi_1, kpi_2, kpi_3, kpi_4, kpi_5 = st.columns(5)
 kpi_1.metric("Sales", f"${total_sales:,.0f}")
 kpi_2.metric("Profit", f"${total_profit:,.0f}")
 kpi_3.metric("Profit margin", f"{profit_margin:.1%}")
-kpi_4.metric("Orders", f"{order_count:,}")
+kpi_4.metric(order_label, f"{order_count:,}")
 kpi_5.metric("Average discount", f"{avg_discount:.1%}")
 
 st.divider()
